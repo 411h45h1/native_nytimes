@@ -3,12 +3,12 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 
 platform :ios, '10.0'
 
-target 'native_windows' do
+target 'native_nytimes' do
   config = use_native_modules!
 
   use_react_native!(:path => config["reactNativePath"])
 
-  target 'native_windowsTests' do
+  target 'native_nytimesTests' do
     inherit! :complete
     # Pods for testing
   end
@@ -23,10 +23,10 @@ target 'native_windows' do
   end
 end
 
-target 'native_windows-tvOS' do
-  # Pods for native_windows-tvOS
+target 'native_nytimes-tvOS' do
+  # Pods for native_nytimes-tvOS
 
-  target 'native_windows-tvOSTests' do
+  target 'native_nytimes-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end
